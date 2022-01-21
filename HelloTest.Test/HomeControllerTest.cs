@@ -15,6 +15,7 @@ namespace HelloTest.Test
         }
 
         [Test]
+        [Category("Security Test")]
         public void IndexReturnViewIfConnectedTest()
         {
             //Arrange
@@ -32,6 +33,7 @@ namespace HelloTest.Test
         }
 
         [Test]
+        [Category("Security Test")]
         public void IndexReturnToLoginIfNotConnectedTest()
         {
             //Arrange

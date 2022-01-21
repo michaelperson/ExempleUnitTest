@@ -1,5 +1,6 @@
 ﻿using HelloTest.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace HelloTest.Controllers
 {
@@ -14,6 +15,11 @@ namespace HelloTest.Controllers
         {
             _mySession.IsLogged = true;
             return View();
+        }
+
+        public IActionResult Index()
+        {
+            return RedirectToActionPermanent("Login");
         }
     }
 }

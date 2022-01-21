@@ -54,11 +54,20 @@ namespace ExempleUnitTest.Test
             Assert.DoesNotThrow(()=>op.Addition());
         }
 
-        [Test]
+        [Test(Author ="mike",Description ="Tester la soustraction")]
+        [Category("Basic Test")]
         public void SoustractionTest()
         {
             int resultat = op.Soustraction();          
             Assert.AreEqual(2, resultat);
+        }
+
+        [Test]
+        [Category("Basic Test")]
+        public void MultiplicationTest()
+        {
+            long resultat = op.Multiplication(2, 3);
+            Assert.AreEqual(6, resultat);
         }
     }
 }
