@@ -33,6 +33,8 @@ namespace ExempleUnitTest.Test
         {
             int somme = op.Addition();          
             Assert.AreEqual(6, somme);
+
+            Assert.Inconclusive("La méthode n'échoue pas MAIS le test est trop petit pour être certain que la fonction est opérationnelle");
         }
 
         [Test]
