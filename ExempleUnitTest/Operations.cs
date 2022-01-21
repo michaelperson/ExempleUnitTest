@@ -22,6 +22,11 @@ namespace ExempleUnitTest
             this._a = A;
         }
 
+        public double AdditionDouble()
+        {
+            return _b + _a;
+        }
+
         public int Addition()
         {
             try

@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post">
+
+    Faites une addition
+    <br />
+    Chiffre 1 : <input type="number" name="ch1"/><br />
+    Chiffre 2 : <input type="number" name="ch2" /><br />
+
+    <button>Calculer</button>
+    <div class="alert alert-info">@ViewBag.resultat</div>
+</form>
